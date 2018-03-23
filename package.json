@@ -1,0 +1,30 @@
+{
+  "name": "personalwebsite",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lilei2011/personal-website.git"
+  },
+  "keywords": [
+    "source",
+    "code",
+    "for",
+    "personal",
+    "website"
+  ],
+  "author": "Lei Li",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lilei2011/personal-website/issues"
+  },
+  "homepage": "https://github.com/lilei2011/personal-website#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "hbs": "^4.0.1"
+  }
+}
