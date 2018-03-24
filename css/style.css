@@ -2,6 +2,7 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 	color: #464447;
+	box-sizing: inherit;
 }
 header {
 	position: relative;
@@ -17,13 +18,7 @@ header {
 .bg-blue a {
 	color: white !important;
 }
-.topNav {
-	//overflow: auto;
-	//border-bottom: 1px solid black;
-}
 .pageHeader {
-	//float: left;
-    //border: 1px solid black;
     padding: 15px 15px 0 15px;
 }
 .headerText {
@@ -38,7 +33,6 @@ header {
 	border: 1px solid #ddd;
 	border-radius: 20%;
 	padding: 5px;
-	//vertical-align: middle;
 	margin-left: 15px;
 }
 .hero {
@@ -47,14 +41,11 @@ header {
 	margin:1em auto;
 }
 .navMenu {
-	display: table;
-	margin: 0 auto;
+	text-align: center;
+	padding: 1em;
 }
-.navMenu ul{
-	list-style: none;
-	
-}
-.navMenu li {
+
+.navMenu a {
 	margin: 0 20px;
 	//border: 1px solid black;
 	font-size: 1.5em;
@@ -66,8 +57,7 @@ header {
 	color: #464447;
 }
 
-.navMenu li:hover {
-  //animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+.navMenu.hover a:hover {
   animation: shake 1s;
   transform: rotateY(0);
   backface-visibility: hidden;
@@ -89,13 +79,17 @@ header {
 	line-height: 1.5em;
     font-size: 1.1em;
 }
+.section .heading {
+	text-align: center;
+	margin-bottom: 2em;
+}
 .section .company {
 	display: inline;
 }
 .section .period {
 	float: right;
 }
-.section p {
+.section p.intro {
 	letter-spacing: 1px;
 }
 .box {
@@ -115,6 +109,10 @@ header {
 .box p {
 	margin: 5px 0;
 }
+#projects {
+	padding-left: 10%;
+	padding-right: 10%;
+}
 #projects-wrapper {
 	display: flex;
     justify-content: space-around;
@@ -122,15 +120,89 @@ header {
 }
 .card {
 	margin: 10px;
-    padding: 10px;
-    width: 30%;
-    box-shadow: 1px 1px 10px black;
+    padding: 15px;
+    width: 40%;
+    box-shadow: 1px 1px 10px #464447;
     transition: all 0.2s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 5px;
+    line-height: normal;
+    font-size: 1em;
 }
 .card:hover {
 	//border-radius: 5px;
     transform: scale(1.02);
+    box-shadow: 1px 1px 15px #464447;
 }
+.card img {
+	max-width: 100%;
+	border: 1px solid #464447;
+}
+.card .item {
+	padding-right: 5px;
+}
+.contact-form {
+	text-align: center;
+}
+.form-control {
+	width: 70%;
+    border-radius: 3px;
+    border: 1px solid #464447;
+    margin: 1%;
+    font-size: 18px;
+    padding: 1%;
+    box-sizing: inherit;
+}
+.contact-form input {
+	height: 30px;
+   
+}
+.contact-form textarea {
+	height: 250px;
+}
+.submit {
+	cursor: pointer;
+}
+.icons {
+	text-align: center;
+}
+.icons a {
+	margin: 0 1em;
+}
+.github, .facebook, .gmail, .linkedin
+{ display: inline-block; background: url('../images/icons.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+ 
+.github { background-position: -5px -0px; width: 64px; height: 64px; }
+.facebook { background-position: -74px -0px; width: 64px; height: 64px; }
+.gmail { background-position: -5px -69px; width: 64px; height: 64px; }
+.linkedin { background-position: -74px -69px; width: 64px; height: 64px; }
+#footer .navMenu a {
+	margin: 1em;
+    font-size: 1.2em;
+   border-bottom: none;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

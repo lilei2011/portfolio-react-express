@@ -2,92 +2,137 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+	<meta charset="utf-8">
 
-  <title>Lei Li Personal Website</title>
-  <meta name="description" content="Lei Li Portfolio">
-  <meta name="author" content="LeiLi">
+	<title>Lei Li Personal Website</title>
+	<meta name="description" content="Lei Li Portfolio">
+	<meta name="author" content="LeiLi">
 
-  <link rel="stylesheet" href="css/style.css?v=1.0">
+	<link rel="stylesheet" href="css/style.css?v=1.0">
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+	  <!--[if lt IE 9]>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
 </head>
 
 <body>
-  <header >
-  	<nav class="topNav">
-		<div class="pageHeader">
-			<span class="headerText">Lei Li</span>
-			<img class="portrait" src="images/lei.jpg" alt="Lei pic">
-			<span class="headerText">+ CSS + HTML + Javascript = </span>
-			
+	<header >
+		<nav class="topNav">
+			<div class="pageHeader">
+				<span class="headerText">Lei Li</span>
+				<img class="portrait" src="images/lei.jpg" alt="Lei pic">
+				<span class="headerText">+ CSS + HTML + Javascript = </span>
+				
+			</div>
+			<div class="hero">Front end engineer</div>
+			<div class="navMenu hover">
+				
+					<a href="#about">About</a>
+					<a href="#experience">Experience</a>
+					<a href="">Projects</a>
+					<a href="">Contact</a>
+				
+			</div>
+		</nav>
+	</header>
+
+	<div class="main">
+
+		<div class="section" id="about">
+			<h2 class="heading">About</h2>
+			<p class="intro">I'm a front end engineer, based in the heart of Silicon Valley. I witness digital giants growing big around me. I hope to use my toolkit in the construction of beautiful digital world!  </p>
+			<p class="intro">I specialize in building single page applications, responsive design, accessibility, and improving website performance. I can also turn designed wireframes into html css markups. </p>
+			<p class="intro">My latest interest is css and javascript animations.</p>
+			<p class="intro">My skill set: HTML, CSS, Javascript.</p>
+			<p class="intro">Frameworks: AngularJS, NodeJS, Express, ReactJS</p>
 		</div>
-		<div class="hero">Front end engineer</div>
+
+		<div class="section bg-blue" id="experience">
+			<h2 class="heading">Experience</h2>
+			<div class="box">
+				<h4>Front end engineer</h4>
+				<p class="company"><a href="">Get Insured</a><span class="period">Sept 2015 - Dec 2017</span></p>
+				<p>building web applications on health insurance market place, doing responsive design and accessibility testing for diverse consumer groups.</p>
+			</div>
+			<div class="box">
+				<h4>Front end engineer</h4>
+				<p class="company"><a href="">Guildery</a> <span class="period">Apr 2015 - June 2015</span></p>
+				<p>helped building user interface of ecommerce website with html, css, javascript</p>
+			</div>
+			<div class="box">
+				<h4>Front end engineer</h4>
+				<p class="company"><a href="">First Tech Credit Union</a><span class="period">Sept 2014 - Mar 2015</span></p>
+				<p>prototyped and turned wireframes into markups for financial web app, with html, css, Bootstrap, jQuery</p>
+			</div>
+			<div class="box">
+				<h4>Front end engineer trainee</h4>
+				<p class="company"><a href="">Coding Dojo Web Camp</a><span class="period">May 2013 - Jul 2013</span></p>
+				<p>Learned MVC, and MEAN stack web development tools</p>
+			</div>
+		</div>
+
+		<div class="section" id="projects">
+			<h2 class="heading">Projects</h2>
+			<div id="projects-wrapper">
+				<div class="card">
+					<a href="https://wauat.ghixqa.com/hix/dst/index/?householdId=189727d5-a69e-4f4e-990d-dc6cb24ee3cf&lang=en&appflow=pre&redirectDomain=https%3A%2F%2Fwww.google.com%20-%20pres-search-field" target="_blank">
+						<img src="images/cards/WashingtonHealthPlanFinder.png">
+					</a>
+					<div class="description">
+						<p>single page application for Washington Health Plan Finder</p>
+						<span class="item">AngularJS</span>
+						<span class="item">Bootstrap 4</span>
+					</div>
+				</div>
+				<div class="card">
+				</div>
+				<div class="card">
+				</div>
+				<div class="card">
+				</div>
+			</div>
+		</div>
+
+		<div class="section" id="contact">
+			<h2 class="heading">Contact me</h2>
+			<form class="contact-form">
+				<div>
+					<input  class="form-control" type="text" name="name" placeholder="Name">
+				</div>
+
+				<div>
+					<input class="form-control"type="email" name="email" placeholder="Email">
+				</div>
+				
+				<div>
+					<textarea class="form-control" placeholder="Write your message here..."></textarea>
+				</div>	
+				
+				<div>
+					<input class="form-control bg-blue submit" type="submit" name="send" value="Send">
+				</div>
+				
+			</form>
+		</div>
+
+	</div>
+
+	<footer id="footer" class="bg-blue">
 		<div class="navMenu">
-			<ul >
-				<li><a href="#about">About</a></li>
-				<li><a href="#experience">Experience</a></li>
-				<li><a href="">Projects</a></li>
-				<li><a href="">Skill set</a></li>
-				<li><a href="">Contact</a></li>
-			</ul>
+			<a href="#about">About</a>
+			<a href="#experience">Experience</a>
+			<a href="#projects">Projects</a>
+			<a href="#contact">Contact</a>
 		</div>
-  	</nav>
-  </header>
+		<div class="icons">
+			<a class="github" href="https://github.com/lilei2011" target="_blank"></a>
+			<a class="facebook" href="https://www.facebook.com/leili1230" target="_blank"></a>
+			<a class="gmail" href="" target="_blank"></a>
+			<a class="linkedin" href="https://www.linkedin.com/in/leilisv/" target="_blank"></a>
+		</div>
+		
+	</footer>
 
-  <div class="main">
 
-  	<div class="section" id="about">
-  		<h2>About</h2>
-  		<p>I'm a front end engineer, based in the heart of Silicon Valley. I witness digital giants growing big around me. I hope to use my toolkit in the construction of beautiful digital world!  </p>
-  		<p>I specialize in building single page applications, responsive design, accessibility, and improving website performance. I can also turn designed wireframes into html css markups. </p>
-  		<p>My latest interest is css and javascript animations.</p>
-  		<p>My skill set: HTML, CSS, Javascript.</p>
-  		<p>Frameworks: AngularJS, NodeJS, Express, ReactJS</p>
-  	</div>
-  	
-	<div class="section bg-blue" id="experience">
-		<h2>Experience</h2>
-		<div class="box">
-			<h4>Front end engineer</h4>
-			<p class="company"><a href="">Get Insured</a><span class="period">Sept 2015 - Dec 2017</span></p>
-			<p>building web applications on health insurance market place, doing responsive design and accessibility testing for diverse consumer groups.</p>
-		</div>
-		<div class="box">
-			<h4>Front end engineer</h4>
-			<p class="company"><a href="">Guildery</a> <span class="period">Apr 2015 - June 2015</span></p>
-			<p>helped building user interface of ecommerce website with html, css, javascript</p>
-		</div>
-		<div class="box">
-			<h4>Front end engineer</h4>
-			<p class="company"><a href="">First Tech Credit Union</a><span class="period">Sept 2014 - Mar 2015</span></p>
-			<p>prototyped and turned wireframes into markups for financial web app, with html, css, Bootstrap, jQuery</p>
-		</div>
-		<div class="box">
-			<h4>Front end engineer trainee</h4>
-			<p class="company"><a href="">Coding Dojo Web Camp</a><span class="period">May 2013 - Jul 2013</span></p>
-			<p>Learned MVC, and MEAN stack web development tools</p>
-		</div>
-	</div>
-
-	<div class="section" id="projects">
-		<h2>Projects</h2>
-		<div id="projects-wrapper">
-			<div class="card">
-			</div>
-			<div class="card">
-			</div>
-			<div class="card">
-			</div>
-			<div class="card">
-			</div>
-		</div>
-	</div>
-
-  </div>
-
-  
 </body>
 </html>
