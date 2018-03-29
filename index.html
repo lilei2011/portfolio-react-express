@@ -95,24 +95,19 @@
 
 		<div class="section" id="contact">
 			<h2 class="heading">Contact me</h2>
-			<form class="contact-form">
-				<div>
+			
+			<form id="contact-form"  method="post" >
+					<p class="success">Thank you for writing me the message!</p>
 					<input  class="form-control" type="text" name="name" placeholder="Name">
-				</div>
-
-				<div>
-					<input class="form-control"type="email" name="email" placeholder="Email">
-				</div>
 				
-				<div>
-					<textarea class="form-control" placeholder="Write your message here..."></textarea>
-				</div>	
+					<input class="form-control" type="email" name="email" placeholder="Email">		
 				
-				<div>
-					<input class="form-control bg-blue submit" type="submit" name="send" value="Send">
-				</div>
+					<textarea class="form-control" placeholder="Write your message here..." name="messageBody"></textarea>
+					
+					<input class="form-control bg-blue submit" type="submit" name="send" value="Send">		
 				
 			</form>
+			
 		</div>
 
 	</div>
@@ -124,7 +119,7 @@
 			<a href="#projects">Projects</a>
 			<a href="#contact">Contact</a>
 		</div>
-		<div class="icons">
+		<div class="navMenu">
 			<a class="github" href="https://github.com/lilei2011" target="_blank"></a>
 			<a class="facebook" href="https://www.facebook.com/leili1230" target="_blank"></a>
 			<a class="gmail" href="" target="_blank"></a>
@@ -132,7 +127,39 @@
 		</div>
 		
 	</footer>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<!-- <script src="/jquery/jquery.js"></script> -->
+<!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
+<!-- <script src="/js/jquery.js"></script> -->
 
+
+<script type="text/javascript">
+
+
+	$("#contact-form").submit(function(e) {
+
+		$.ajax({
+           type: "POST",
+           url: "/",
+           data: $("#contact-form").serialize(), // serializes the form's elements.
+           success: function(data)
+           {
+               // console.log(data); 
+           		$('.success').css("visibility", "visible");
+           }
+         });
+		$(this).trigger('reset');
+
+		e.preventDefault();
+	})
+
+
+
+
+</script>
 
 </body>
 </html>
