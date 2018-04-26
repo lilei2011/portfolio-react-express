@@ -5,10 +5,11 @@ import { NavLink } from 'react-router-dom';
 const Footer = () => (
 <footer id="footer" className="bg-blue">
 		<div className="navMenu">
-			<a href="#about">About</a>
-			<a href="#experience">Experience</a>
-			<a href="#projects">Projects</a>
-			<a href="#contact">Contact</a>
+			<NavLink to="/" activeClassName="is-active" exact={true}>Home</NavLink>
+			<NavLink to="/about" activeClassName="is-active" exact={true}>About</NavLink>
+			<NavLink to="/experience" activeClassName="is-active" exact={true}>Experience</NavLink>
+			<NavLink to="/projects" activeClassName="is-active" exact={true}>Projects</NavLink>
+			<NavLink to="/contact" activeClassName="is-active">Contact</NavLink>
 		</div>
 		<div className="navMenu">
 			<a className="github" href="https://github.com/lilei2011" target="_blank"></a>
