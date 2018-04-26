@@ -1,3 +1,7 @@
- client folder has all the files from a react boiler plate
+#front end and back end deployed at the same time
 
- new-client foler has files generate with create-react-app command
+backend with nodejs and express in the server folder
+frontend with 'create-react-app' scripts in the client folder
+
+
+
