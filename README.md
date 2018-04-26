@@ -1,3 +1,5 @@
+
+# source code for my portfolio site at http:leili.us
 # front end and back end deployed at the same time
 
 backend with nodejs and express in the server folder,
