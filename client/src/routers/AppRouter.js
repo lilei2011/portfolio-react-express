@@ -4,10 +4,10 @@ import Header from '../components/Header';
 import HomePage from '../components/HomePage';
 import AboutPage from '../components/AboutPage';
 import ExperiencePage from '../components/ExperiencePage';
-import PortfolioPage from '../components/PortfolioPage';
+import ProjectsPage from '../components/ProjectsPage';
 import ContactPage from '../components/ContactPage';
 import NotFoundPage from '../components/NotFoundPage';
-
+import Footer from '../components/Footer';
 
 const AppRouter = () => (
   <BrowserRouter>
@@ -16,12 +16,14 @@ const AppRouter = () => (
       <Switch>
         <Route path="/" component={HomePage} exact={true} />
         <Route path="/about" component={AboutPage} exact={true} />
-        <Route path="/portfolio" component={PortfolioPage} exact={true} />
         <Route path="/experience" component={ExperiencePage} exact={true} />
+        <Route path="/projects" component={ProjectsPage} exact={true} />    
         <Route path="/contact" component={ContactPage} exact={true}/>
-        <Route component={NotFoundPage} />
+        <Route component={HomePage} /> 
       </Switch>
+      <Footer />
     </div>
+    
   </BrowserRouter>
 );
 

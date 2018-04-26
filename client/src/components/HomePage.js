@@ -1,9 +1,13 @@
 import React from 'react';
-
+import lei from '../images/lei.jpg';
 const HomePage = () => (
   <div>
-    <h1>Welcome</h1>
-    <p>This is my site. Take a look around!</p>
+     <div className="pageHeader">
+        <span className="headerText">Lei Li</span>
+        <img className="portrait" src={lei} alt="Lei pic" />
+        <span className="headerText">+ CSS + HTML + Javascript = </span>
+        <div className="hero">Front end engineer</div>
+    </div>
   </div>
 );
 
