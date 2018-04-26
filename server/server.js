@@ -1,7 +1,7 @@
 const express = require('express');
 const hbs = require('hbs');
 const bodyParser = require('body-parser');
-
+const nodemailer = require('nodemailer');
 const {mongoose} = require('./db/mongoose');
 const {Message} = require('./models/message');
 
@@ -31,7 +31,25 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
 
-
+	let transporter = nodemailer.createTransport({
+		service:'gmail',
+		auth: {
+			user: "lilei2004@gmail.com",
+			pass: "btkzdgxwtopgaeio"
+		}
+	});
+	let mailOptions = {
+		from: 'lilei2004@gmail.com',
+		to: 'lilei2004@gmail.com',
+		subject: `from ${req.body.name} ${req.body.email}`,
+		text: req.body.messageBody
+	};
+	transporter.sendMail(mailOptions, function (err, info) {
+		if(err)
+		  console.log("error: ", err);
+		else
+		  console.log(info);
+	});
 	let message = new Message({
 		name: req.body.name,
 		email: req.body.email,
